@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Send Email with JavaScript</title>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    // Initialize EmailJS with your public key
+    (function(){
+      emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your actual public key
+    })();
+
+    function sendEmail() {
+      const params = {
+        from_name: document.getElementById("name").value,
+        message: document.getElementById("message").value,
+        reply_to: document.getElementById("email").value
+      };
+
+      emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", params)
+        .then(function(response) {
+          alert("Email sent successfully!");
+        }, function(error) {
+          alert("Failed to send email. Check console.");
+          console.error(error);
+        });
+    }
+  </script>
+</head>
+<body>
+
+  <h2>📧 Send Email using JavaScript</h2>
+
+  <input type="text" id="name" placeholder="Your Name"><br><br>
+  <input type="email" id="email" placeholder="Your Email"><br><br>
+  <textarea id="message" placeholder="Your Message"></textarea><br><br>
+
+  <button onclick="sendEmail()">Send Email</button>
+
+</body>
+</html>

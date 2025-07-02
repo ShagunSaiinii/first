@@ -1,0 +1,10 @@
+Height,Weight,Weight_Change,Sweating,Obesity,Fatigue,Cold_Intolerance,Dry_Skin,Constipation,Irregular_Cycle,Weight_Loss,Heat_Intolerance,Anxiety,Change_in_Cycle,Thyroid_Condition
+160,70,Gain,1,1,1,1,1,1,1,0,0,0,0,Hypothyroidism
+165,60,Loss,0,0,0,0,0,0,0,1,1,1,1,Hyperthyroidism
+170,65,None,0,0,1,0,0,0,0,0,0,0,0,Normal
+158,75,Gain,0,1,1,1,1,1,1,0,0,0,0,Hypothyroidism
+172,58,Loss,1,0,0,0,0,0,0,1,1,1,1,Hyperthyroidism
+168,62,None,0,0,0,0,0,0,0,0,0,0,0,Normal
+160,80,Gain,1,1,1,1,1,1,1,0,0,0,0,Hypothyroidism
+175,55,Loss,0,0,0,0,0,0,0,1,1,1,1,Hyperthyroidism
+162,68,None,0,0,0,1,0,0,0,0,0,0,0,Normal
